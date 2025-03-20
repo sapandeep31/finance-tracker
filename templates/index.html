@@ -322,6 +322,7 @@
 </head>
 
 <body>
+
     <div class="container">
         <h1>
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -330,7 +331,7 @@
             </svg>
             Personal Finance Forecaster
         </h1>
-
+        <div id="google_translate_element"></div>
         <div class="sample-data">
             <h3>Need sample data?</h3>
             <p>Click below to generate sample spending and income data for testing.</p>
@@ -1194,6 +1195,18 @@
                         document.getElementById('loading').style.display = 'none';
                     }
                 </script>
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement(
+                            { pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+                            'google_translate_element'
+                        );
+                    }
+                </script>
+                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                </script>
+
+      
     </body>
     
     </html>
